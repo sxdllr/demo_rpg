@@ -20,3 +20,4 @@ D:\Coding\repos\demo_rpg\obj\Debug\net9.0\refint\demo_rpg.dll
 D:\Coding\repos\demo_rpg\obj\Debug\net9.0\demo_rpg.pdb
 D:\Coding\repos\demo_rpg\obj\Debug\net9.0\demo_rpg.genruntimeconfig.cache
 D:\Coding\repos\demo_rpg\obj\Debug\net9.0\ref\demo_rpg.dll
+D:\Coding\repos\demo_rpg\obj\Debug\net9.0\demo_rpg.sourcelink.json
