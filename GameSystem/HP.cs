@@ -10,15 +10,17 @@ namespace demo_rpg.GameSystem
     {
         private ushort _maxHP;
 
-        public HP(ushort startingMaxHP)
+        public HP() : this(currentHP: 1, maxHP: 1) { }
+
+        public HP(ushort currentHP, ushort maxHP)
         {
-            MaxHP = startingMaxHP;
-            CurrentHP = startingMaxHP;
+            _maxHP = maxHP;
+            CurrentHP = Math.Min(_maxHP, currentHP);
         }
 
         public ushort MaxHP 
         {
-            get { return _maxHP; }
+            get => _maxHP;
             set 
             {
                 if (value >= 1) 

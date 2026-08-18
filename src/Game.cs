@@ -1,4 +1,5 @@
-﻿using Raylib_cs;
+﻿using demo_rpg.Entities;
+using Raylib_cs;
 
 internal static class Game
 {
@@ -12,6 +13,11 @@ internal static class Game
             Raylib.BeginDrawing();
             Raylib.ClearBackground(Color.White);
 
+            Warrior warrior = new Warrior();
+            Raylib.DrawText($"Class: Warrior\nMaxHP: {warrior.Health.MaxHP}\n" +
+                $"Stength: {warrior.Stats.Strength}\n" +
+                $"Intelligence: {warrior.Stats.Intelligence}",
+                12, 12, 20, Color.Black);
 
             Raylib.EndDrawing();
         }
