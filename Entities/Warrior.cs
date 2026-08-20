@@ -8,20 +8,9 @@ using demo_rpg.GameSystem;
 
 namespace demo_rpg.Entities
 {
-    public class Warrior
+    public class Warrior : BaseHero
     {
-        public const ushort BASESTR = 5;
-        public const ushort BASEINT = 1;
-        public const ushort HPGROWTH = 5;
-
-        public HP Health { get; private set; }
-        public StatBlock Stats { get; private set; }
-
-        public Warrior() 
-        {
-            Health = new HP(HPGROWTH, HPGROWTH);
-            Stats = new StatBlock(strength: BASESTR, intelligence: BASEINT);
-        }
+        public Warrior() : base(hpGrowth: 5, baseStr: 5, baseInt: 1) { }
 
     }
 }
